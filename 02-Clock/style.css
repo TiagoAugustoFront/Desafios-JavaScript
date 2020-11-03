@@ -1,0 +1,70 @@
+:root{
+    font-size: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: url(./assets/469578.jpg);
+    background-repeat: no-repeat;   
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-clock{
+    width: 30rem;
+    max-width: 90vw;
+    height: 30rem;
+    max-height: 90vw;
+
+    border: 20px solid #ffffff;
+    border-radius: 50%;
+
+    position: relative;
+    padding: 2rem;
+    box-shadow: 
+        0 0 0px 4px #0000001a,
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px #000000,
+        0 0 10px #00000033;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hand{
+    width: 50%;
+    height: 6px;
+    background: #ffffff;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.3s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+
+
+
+
+@media(min-width: 1024px){
+    html{
+        background-size: 100%;
+    }
+}
